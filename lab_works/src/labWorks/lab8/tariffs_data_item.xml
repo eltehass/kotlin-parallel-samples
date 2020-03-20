@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tariffElement id="_4444c00c44d600">
+    <name>Lolly dolly</name>
+    <operatorName>Vodafone</operatorName>
+    <payroll>89</payroll>
+    <smsPrice>15</smsPrice>
+    <callPrices>
+        <item>
+            <Type>This</Type>
+            <Price>0</Price>
+        </item>
+        <item>
+            <Type>Others</Type>
+            <Price>20</Price>
+        </item>
+        <item>
+            <Type>Stationary</Type>
+            <Price>20</Price>
+        </item>
+    </callPrices>
+    <parameters>
+        <item>
+            <Type>Favourite number</Type>
+            <Price>15</Price>
+        </item>
+        <item>
+            <Type>Charging</Type>
+            <Price>15</Price>
+        </item>
+        <item>
+            <Type>Connection</Type>
+            <Price>10</Price>
+        </item>
+    </parameters>
+</tariffElement>

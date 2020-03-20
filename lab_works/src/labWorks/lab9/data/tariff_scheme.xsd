@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        attributeFormDefault="unqualified"
+        elementFormDefault="qualified">
+
+    <xsd:element name="tariffs">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="tariffElement" type="tariff" minOccurs="1" maxOccurs="12"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="tariff">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="operatorName" type="xsd:string"/>
+            <xsd:element name="payroll" type="xsd:int"/>
+            <xsd:element name="smsPrice" type="xsd:int"/>
+            <xsd:element name="callPrices" type="CallsType"/>
+            <xsd:element name="parameters" type="ParametersType"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="ParametersType">
+        <xsd:sequence>
+            <xsd:element name="item" minOccurs="1" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Type" type="xsd:string"/>
+                        <xsd:element name="Price" type="xsd:int"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="CallsType">
+        <xsd:sequence>
+            <xsd:element name="item" minOccurs="1" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="Type" type="CallType"/>
+                        <xsd:element name="Price" type="xsd:int"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="CallType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="This"/>
+            <xsd:enumeration value="Others"/>
+            <xsd:enumeration value="Stationary"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

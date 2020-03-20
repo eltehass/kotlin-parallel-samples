@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tariffs>
+
+    <tariffElement id="_5133c0d60046c109">
+        <name>Boney M</name>
+        <operatorName>Life</operatorName>
+        <payroll>95</payroll>
+        <smsPrice>25</smsPrice>
+        <callPrices>
+            <item>
+                <Type>This</Type>
+                <Price>5</Price>
+            </item>
+            <item>
+                <Type>Others</Type>
+                <Price>15</Price>
+            </item>
+            <item>
+                <Type>Stationary</Type>
+                <Price>10</Price>
+            </item>
+        </callPrices>
+        <parameters>
+            <item>
+                <Type>Favourite number</Type>
+                <Price>20</Price>
+            </item>
+            <item>
+                <Type>Charging</Type>
+                <Price>5</Price>
+            </item>
+            <item>
+                <Type>Connection</Type>
+                <Price>15</Price>
+            </item>
+        </parameters>
+    </tariffElement>
+
+    <tariffElement id="_6315c0d60046c109">
+        <name>Tasty sound</name>
+        <operatorName>Life</operatorName>
+        <payroll>105</payroll>
+        <smsPrice>15</smsPrice>
+        <callPrices>
+            <item>
+                <Type>This</Type>
+                <Price>10</Price>
+            </item>
+            <item>
+                <Type>Others</Type>
+                <Price>20</Price>
+            </item>
+            <item>
+                <Type>Stationary</Type>
+                <Price>15</Price>
+            </item>
+        </callPrices>
+        <parameters>
+            <item>
+                <Type>Favourite number</Type>
+                <Price>30</Price>
+            </item>
+            <item>
+                <Type>Charging</Type>
+                <Price>10</Price>
+            </item>
+            <item>
+                <Type>Connection</Type>
+                <Price>10</Price>
+            </item>
+        </parameters>
+    </tariffElement>
+
+</tariffs>
